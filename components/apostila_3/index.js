@@ -1,40 +1,31 @@
 import * as React from 'react';
-import { TouchableOpacity } from 'react-native';
-import { View, Text, Stylesheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 export default function Index() {
     return(
-        <view style={styles.container}>
+        <View style={styles.container}>
             <Text style={styles.paragraph}>
                 Exmplo 3
             </Text>
 
-            <TouchableOpacity
-                onPress={() => alert ('Ola mundo!!!') }
-                style={styles.button}
-            > 
 
-                <text style={styles.textbutton}>
-                  Ola mundo!!!
-                </text>   
-            </TouchableOpacity>
-
-        </view>
+        </View>
     );
 }
 
-const styles = Stylesheet.create({
+const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
-        backgroundColor: '#f5f5f5',
+        flex: 1, 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        backgroundColor: '#000',
         padding: 8,
     },
     paragraph: {
         margin: 24,
         fontSize: 26,
-        fontweight: 'bold',
-        textalign: 'center',
+        fontWeight: 'bold',
+        textAlign: 'center',
         color: '#9e9e9e',
     },
 });
