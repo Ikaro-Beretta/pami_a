@@ -14,7 +14,7 @@ export default function apostila03() {
     setContador (contador+1);
   }
   function zerarNumber(){
-    setContador (contador-contador);
+    setContador (0);
   }
 
   return (

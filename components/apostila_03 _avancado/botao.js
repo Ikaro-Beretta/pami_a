@@ -1,14 +1,15 @@
 import { Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
 
-function Botão({ sinal}){
+function Botao({ sinal}){
     return(
         <TouchableOpacity 
-        style={styles.button,styles.botaoSinal}
+        style={[styles.button, styles.botaoSinal]}
+        onPress={() => funcao()}
       >
-      <Text style={styles.textButton}>{sinal}-</Text>
+      <Text style={styles.textButton}>{sinal}</Text>
       </TouchableOpacity>
     );
 }
 
-export default Botão;
+export default Botao;
