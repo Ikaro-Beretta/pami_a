@@ -9,14 +9,14 @@ const styles = StyleSheet.create({
     },
     paragraph: {
       margin: 6,
-      fontSize: 18,
+      fontSize: 25,
       fontWeight: 'bold',
       textAlign: 'center', 
       color: '#C51162', 
     },
     txtSaida: {
       margin: 6, 
-      fontSize: 22, 
+      fontSize: 25, 
       fontWeight: 'bold', 
       textAlign: 'center', 
       color: '#E91E63',     
@@ -32,22 +32,36 @@ const styles = StyleSheet.create({
       marginTop: 10, 
     }, 
     button: {
-      backgroundColor: '#E91E63', 
-      height: 40, 
-      justifyContent: 'center', 
-      borderRadius: 10, 
-      marginTop: 20, 
+      backgroundColor: '#E91E63',
+      height: 40,
+      justifyContent: 'center',
+      borderRadius: 10,
+      marginTop: 20,
+      width: 70,
     }, 
+    buttonZerar: {
+      backgroundColor: '#E91E63',
+      height: 40,
+      justifyContent: 'center',
+      borderRadius: 10,
+      marginTop: 20,
+      width: 378,
+    },
     textButton: {
       fontSize: 22, 
       color: '#FF80AB', 
       textAlign: 'center', 
     }, 
     textLabel: {
-      fontSize: 16, 
+      fontSize: 20, 
       fontWeight: 'bold', 
       color: '#C51162',     
     }, 
+    buttonContainer: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+    },
+    
   });
   
   export default styles;
